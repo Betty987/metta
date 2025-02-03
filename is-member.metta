@@ -1,5 +1,10 @@
-;is-member
-(= (is-member () $symbol) False )
-(= (is-member $list $symbol) (
-    if (== (car-atom $list) $symbol) True (is-member (cdr-atom $list) $symbol) )
+(=(is-member (Cons $x $list) $number)
+(if (== $x $number)
+    (True)
+    (if (== $list Nil )
+        (False)
+        (is-member $list $number)
+    ))
+
 )
+!(is-member (Cons 3 (Cons 4 (Cons 5 Nil))) 9)
