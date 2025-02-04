@@ -1,3 +1,14 @@
+;Graph Rewriting Rule
+;The first match operation retrieves and prints all existing links.
+;The transformation rule modifies the graph:
+;It removes the link (D → A), breaking the cycle.
+;It adds a new link (D → E), extending the graph.
+;Querying
+;The final match operation retrieves and prints all current links in the modified graph.
+;Before rewriting=A → B → C → D → A
+;After rewriting=A → B → C → D → E
+
+
 (link A B)
 (link B C)
 (link C D)
