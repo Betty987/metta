@@ -1,10 +1,10 @@
-(=(is-member (Cons $x $list) $number)
-(if (== $x $number)
-    (True)
-    (if (== $list Nil )
-        (False)
-        (is-member $list $number)
-    ))
+(=(is-member () $val) False)  ; Base case: Empty list, return False
 
-)
-!(is-member (Cons 3 (Cons 4 (Cons 5 Nil))) 9)
+(=(is-member $list $val) (
+    let* (
+        ($head (car-atom $list))   ; Extract the first element
+        ($tail (cdr-atom $list))   ; Extract the rest of the list
+    ) (if (== $head $val) True (is-member $tail $val))  ; Check and recurse
+))
+
+!(is-member (1 2 3) 9)
