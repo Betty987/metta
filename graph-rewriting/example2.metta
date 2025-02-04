@@ -1,19 +1,19 @@
 ;Graph Rewriting in meTTa: Tree Reversal
 ;1. The initial graph represents a tree with A as the root and the following relationships:
 ; original
-      A
-     ↙   ↘
-    B      C          
-   ↙  ↘   ↙  ↘
-  D    E  F    G
+;      A
+;     ↙   ↘
+;    B      C          
+;   ↙  ↘   ↙  ↘
+;  D    E  F    G
 
 ;Transformed
 
-   G   F   D   E
-   ↘  ↙   ↘  ↙
-     C       B
-      ↘     ↙
-         A
+;   G   F   D   E
+ ;  ↘  ↙   ↘  ↙
+;     C       B
+ ;     ↘     ↙
+ ;        A
 
 ;2. Graph Rewriting Rule
     ;Finds each (link Parent Child).
