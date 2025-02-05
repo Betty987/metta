@@ -20,7 +20,7 @@
 ! (match &self (, (link A B)
                   (link B C)
                   (link C D)
-                  (link C D))
+                  (link D A))
                (let () (remove-atom &self (link D A))
                        (add-atom &self (link D E))
                        )
