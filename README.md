@@ -8,7 +8,7 @@ This repository contains implementations of various functions in **Metta**. The 
 The following functions manipulate lists in Metta:  
 
 - **`is-member`**: Checks whether an element is present in a list.  
-- **`append`**: Adds an element to the end of a list.  
+- **`append`**: Adds an element to the list.  
 - **`max-value`**: Finds the maximum value in a list.  
 - **`min-value`**: Finds the minimum value in a list.  
 - **`remove-element`**: Removes a specific element from a list.  
